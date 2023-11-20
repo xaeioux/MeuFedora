@@ -15,9 +15,9 @@ com um fluxo pensado no GNOME, por isso a escolha do Fedora, que entrega uma exp
 tanto em desempenho quanto em estabilidade. 
 
 Como usar:
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 wget -O - https://raw.githubusercontent.com/xaeioux/MeuFedora/main/ESSE_AQUI.sh | bash
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Recursos:
 * Otimização no download de atualizações
