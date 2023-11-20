@@ -26,7 +26,7 @@ Recursos:
 * Melhorias no histórico do Zsh
 * NeoVim
 * Gerador de senha aleatória ( mkpass )
-* Skype ** Não está funcionando o repositório **
+* Skype
 * VSCodium
 * Tema do Grub
 * Steam
