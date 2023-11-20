@@ -7,7 +7,7 @@
   ********             Script testado e validado arduamente! 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-(Último teste: 20/11) ★ 
+(Último teste: 20/11/2023) ★ 
   
 Feito com muita atenção, pensando na praticidade e software livre.
 Pode ser usado por qualquer pessoa, basta executar o script e já terá um sistema otimizado
