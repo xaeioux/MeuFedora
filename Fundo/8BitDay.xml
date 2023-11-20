@@ -114,18 +114,18 @@
 	<transition type="overlay">
 		<duration>5.0</duration>
 		<from>MUDAR/.local/share/backgrounds/8BitDay/09-Fim-Crepusculo.png</from>
-		<to>MUDAR/.local/share/backgrounds/8BitDay/10-Cedo-Noite.png</to>
+		<to>MUDAR/.local/share/backgrounds/8BitDay/10-Inicio-Noite.png</to>
 	</transition>
 
 <!-- 19:00 ~ 21:00 -->
 	<static>
-		<file>MUDAR/.local/share/backgrounds/8BitDay/10-Cedo-Noite.png</file>
+		<file>MUDAR/.local/share/backgrounds/8BitDay/10-Inicio-Noite.png</file>
 		<duration>7195.0</duration>
 	</static>
 
 	<transition type="overlay">
 		<duration>5.0</duration>
-		<from>MUDAR/.local/share/backgrounds/8BitDay/10-Cedo-Noite.png</from>
+		<from>MUDAR/.local/share/backgrounds/8BitDay/10-Inicio-Noite.png</from>
 		<to>MUDAR/.local/share/backgrounds/8BitDay/11-Meio-Noite.png</to>
 	</transition>
 
