@@ -14,6 +14,10 @@ Pode ser usado por qualquer pessoa, basta executar o script e já terá um siste
 com um fluxo pensado no GNOME, por isso a escolha do Fedora, que entrega uma experiência ímpar,
 tanto em desempenho quanto em estabilidade. 
 
+Como usar:
+wget -O - https://raw.githubusercontent.com/xaeioux/MeuFedora/main/ESSE_AQUI.sh | bash
+
+
 Recursos:
 * Otimização no download de atualizações
 * Configurações básicas no GNOME
