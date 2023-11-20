@@ -11,145 +11,145 @@
 
 <!-- 5:00 ~ 6:30 -->
 	<static>
-		<file>MUDAR/.local/share/backgrounds/8BitDay/01-Early-Morning.png</file>
+		<file>MUDAR/.local/share/backgrounds/8BitDay/01-Inicio-Manha.png</file>
 		<duration>5395.0</duration>
 	</static>
 
 	<transition type="overlay">
 		<duration>5.0</duration>
-		<from>MUDAR/.local/share/backgrounds/8BitDay/01-Early-Morning.png</from>
-		<to>MUDAR/.local/share/backgrounds/8BitDay/02-Mid-Morning.png</to>
+		<from>MUDAR/.local/share/backgrounds/8BitDay/01-Inicio-Manha.png</from>
+		<to>MUDAR/.local/share/backgrounds/8BitDay/02-Meio-Manha.png</to>
 	</transition>
 
 <!-- 6:30 ~ 7:00 -->
 	<static>
-		<file>MUDAR/.local/share/backgrounds/8BitDay/02-Mid-Morning.png</file>
+		<file>MUDAR/.local/share/backgrounds/8BitDay/02-Meio-Manha.png</file>
 		<duration>1795.0</duration>
 	</static>
 
 	<transition type="overlay">
 		<duration>5.0</duration>
-		<from>MUDAR/.local/share/backgrounds/8BitDay/02-Mid-Morning.png</from>
-		<to>MUDAR/.local/share/backgrounds/8BitDay/03-Late-Morning.png</to>
+		<from>MUDAR/.local/share/backgrounds/8BitDay/02-Meio-Manha.png</from>
+		<to>MUDAR/.local/share/backgrounds/8BitDay/03-Fim-Manha.png</to>
 	</transition>
 
 <!-- 7:00 ~ 9:00 -->
 	<static>
-		<file>MUDAR/.local/share/backgrounds/8BitDay/03-Late-Morning.png</file>
+		<file>MUDAR/.local/share/backgrounds/8BitDay/03-Fim-Manha.png</file>
 		<duration>7195.0</duration>
 	</static>
 
 	<transition type="overlay">
 		<duration>5.0</duration>
-		<from>MUDAR/.local/share/backgrounds/8BitDay/03-Late-Morning.png</from>
-		<to>MUDAR/.local/share/backgrounds/8BitDay/04-Early-Afternoon.png</to>
+		<from>MUDAR/.local/share/backgrounds/8BitDay/03-Fim-Manha.png</from>
+		<to>MUDAR/.local/share/backgrounds/8BitDay/04-Inicio-Tarde.png</to>
 	</transition>
 
 <!-- 9:00 ~ 11:00 -->
 	<static>
-		<file>MUDAR/.local/share/backgrounds/8BitDay/04-Early-Afternoon.png</file>
+		<file>MUDAR/.local/share/backgrounds/8BitDay/04-Inicio-Tarde.png</file>
 		<duration>7195.0</duration>
 	</static>
 
 	<transition type="overlay">
 		<duration>5.0</duration>
-		<from>MUDAR/.local/share/backgrounds/8BitDay/04-Early-Afternoon.png</from>
-		<to>MUDAR/.local/share/backgrounds/8BitDay/05-Mid-Afternoon.png</to>
+		<from>MUDAR/.local/share/backgrounds/8BitDay/04-Inicio-Tarde.png</from>
+		<to>MUDAR/.local/share/backgrounds/8BitDay/05-Meio-Tarde.png</to>
 	</transition>
 
 <!-- 11:00 ~ 16:00 -->
 	<static>
-		<file>MUDAR/.local/share/backgrounds/8BitDay/05-Mid-Afternoon.png</file>
+		<file>MUDAR/.local/share/backgrounds/8BitDay/05-Meio-Tarde.png</file>
 		<duration>17995.0</duration>
 	</static>
 
 	<transition type="overlay">
 		<duration>5.0</duration>
-		<from>MUDAR/.local/share/backgrounds/8BitDay/05-Mid-Afternoon.png</from>
-		<to>MUDAR/.local/share/backgrounds/8BitDay/06-Late-Afternoon.png</to>
+		<from>MUDAR/.local/share/backgrounds/8BitDay/05-Meio-Tarde.png</from>
+		<to>MUDAR/.local/share/backgrounds/8BitDay/06-Fim-Tarde.png</to>
 	</transition>
 
 <!-- 16:00 ~ 17:30 -->
 	<static>
-		<file>MUDAR/.local/share/backgrounds/8BitDay/06-Late-Afternoon.png</file>
+		<file>MUDAR/.local/share/backgrounds/8BitDay/06-Fim-Tarde.png</file>
 		<duration>5395.0</duration>
 	</static>
 
 	<transition type="overlay">
 		<duration>5.0</duration>
-		<from>MUDAR/.local/share/backgrounds/8BitDay/06-Late-Afternoon.png</from>
-		<to>MUDAR/.local/share/backgrounds/8BitDay/07-Early-Evening.png</to>
+		<from>MUDAR/.local/share/backgrounds/8BitDay/06-Fim-Tarde.png</from>
+		<to>MUDAR/.local/share/backgrounds/8BitDay/07-Inicio-Crepusculo.png</to>
 	</transition>
 
 <!-- 17:30 ~ 18:00 -->
 	<static>
-		<file>MUDAR/.local/share/backgrounds/8BitDay/07-Early-Evening.png</file>
+		<file>MUDAR/.local/share/backgrounds/8BitDay/07-Inicio-Crepusculo.png</file>
 		<duration>1795.0</duration>
 	</static>
 
 	<transition type="overlay">
 		<duration>5.0</duration>
-		<from>MUDAR/.local/share/backgrounds/8BitDay/07-Early-Evening.png</from>
-		<to>MUDAR/.local/share/backgrounds/8BitDay/08-Mid-Evening.png</to>
+		<from>MUDAR/.local/share/backgrounds/8BitDay/07-Inicio-Crepusculo.png</from>
+		<to>MUDAR/.local/share/backgrounds/8BitDay/08-Meio-Crepusculo.png</to>
 	</transition>
 
 <!-- 18:00 ~ 18:30 -->
 	<static>
-		<file>MUDAR/.local/share/backgrounds/8BitDay/08-Mid-Evening.png</file>
+		<file>MUDAR/.local/share/backgrounds/8BitDay/08-Meio-Crepusculo.png</file>
 		<duration>1795.0</duration>
 	</static>
 
 	<transition type="overlay">
 		<duration>5.0</duration>
-		<from>MUDAR/.local/share/backgrounds/8BitDay/08-Mid-Evening.png</from>
-		<to>MUDAR/.local/share/backgrounds/8BitDay/09-Late-Evening.png</to>
+		<from>MUDAR/.local/share/backgrounds/8BitDay/08-Meio-Crepusculo.png</from>
+		<to>MUDAR/.local/share/backgrounds/8BitDay/09-Fim-Crepusculo.png</to>
 	</transition>
 
 <!-- 18:30 ~ 19:00 -->
 	<static>
-		<file>MUDAR/.local/share/backgrounds/8BitDay/09-Late-Evening.png</file>
+		<file>MUDAR/.local/share/backgrounds/8BitDay/09-Fim-Crepusculo.png</file>
 		<duration>1795.0</duration>
 	</static>
 
 	<transition type="overlay">
 		<duration>5.0</duration>
-		<from>MUDAR/.local/share/backgrounds/8BitDay/09-Late-Evening.png</from>
-		<to>MUDAR/.local/share/backgrounds/8BitDay/10-Early-Night.png</to>
+		<from>MUDAR/.local/share/backgrounds/8BitDay/09-Fim-Crepusculo.png</from>
+		<to>MUDAR/.local/share/backgrounds/8BitDay/10-Cedo-Noite.png</to>
 	</transition>
 
 <!-- 19:00 ~ 21:00 -->
 	<static>
-		<file>MUDAR/.local/share/backgrounds/8BitDay/10-Early-Night.png</file>
+		<file>MUDAR/.local/share/backgrounds/8BitDay/10-Cedo-Noite.png</file>
 		<duration>7195.0</duration>
 	</static>
 
 	<transition type="overlay">
 		<duration>5.0</duration>
-		<from>MUDAR/.local/share/backgrounds/8BitDay/10-Early-Night.png</from>
-		<to>MUDAR/.local/share/backgrounds/8BitDay/11-Mid-Night.png</to>
+		<from>MUDAR/.local/share/backgrounds/8BitDay/10-Cedo-Noite.png</from>
+		<to>MUDAR/.local/share/backgrounds/8BitDay/11-Meio-Noite.png</to>
 	</transition>
 
 <!-- 21:00 ~ 2:00 -->
 	<static>
-		<file>MUDAR/.local/share/backgrounds/8BitDay/11-Mid-Night.png</file>
+		<file>MUDAR/.local/share/backgrounds/8BitDay/11-Meio-Noite.png</file>
 		<duration>17995.0</duration>
 	</static>
 
 	<transition type="overlay">
 		<duration>5.0</duration>
-		<from>MUDAR/.local/share/backgrounds/8BitDay/11-Mid-Night.png</from>
-		<to>MUDAR/.local/share/backgrounds/8BitDay/12-Late-Night.png</to>
+		<from>MUDAR/.local/share/backgrounds/8BitDay/11-Meio-Noite.png</from>
+		<to>MUDAR/.local/share/backgrounds/8BitDay/12-Fim-Noite.png</to>
 	</transition>
 
 <!-- 2:00 ~ 5:00 -->
 	<static>
-		<file>MUDAR/.local/share/backgrounds/8BitDay/12-Late-Night.png</file>
+		<file>MUDAR/.local/share/backgrounds/8BitDay/12-Fim-Noite.png</file>
 		<duration>10795.0</duration>
 	</static>
 
 	<transition type="overlay">
 		<duration>5.0</duration>
-		<from>MUDAR/.local/share/backgrounds/8BitDay/12-Late-Night.png</from>
-		<to>MUDAR/.local/share/backgrounds/8BitDay/01-Early-Morning.png</to>
+		<from>MUDAR/.local/share/backgrounds/8BitDay/12-Fim-Noite.png</from>
+		<to>MUDAR/.local/share/backgrounds/8BitDay/01-Inicio-Manha.png</to>
 	</transition>
 </background>
