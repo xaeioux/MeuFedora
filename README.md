@@ -4,9 +4,10 @@
    (\_/)   +---------+ Cansei de pular de distro em distro e criei um
   =('°-°)= |   Quê?  | script de pós instalação para o fedora. <3      
    (> ¥ )☭ +---------+ Use para facilitar o dia a dia. 
-  ********             Script testado e validado arduamente!
-(Último teste: 20/11/2023)                                 ★ 
+  ********             Script testado e validado arduamente! 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+(Último teste: 20/11) ★ 
   
 Feito com muita atenção, pensando na praticidade e software livre.
 Pode ser usado por qualquer pessoa, basta executar o script e já terá um sistema otimizado
