@@ -1,7 +1,4 @@
 #!/bin/bash
-##
-## Configurar wootility
-## wget https://s3.eu-west-2.amazonaws.com/wooting-update/wootility-lekker-linux-latest/wootility-lekker-4.5.5.AppImage
 function _Barra() {
   SEMCOR=$(tput sgr0)
   VERMELHOG='\E[31;1m'
@@ -41,7 +38,7 @@ function _ConfiguraRepositorios() {
 }
 
 function _InstalaDependencias() {
-  sudo dnf install -y jq neovim mtr neofetch most zsh NetworkManager-l2tp-gnome lsd bat gnome-extensions-app gnome-tweaks bpytop util-linux-user gnome-music vlc telegram-desktop virt-manager nmap libgda libgda-sqlite #ffmpeg
+  sudo dnf install -y jq neovim mtr neofetch most zsh NetworkManager-l2tp-gnome lsd bat gnome-extensions-app bpytop util-linux-user gnome-music vlc telegram-desktop virt-manager nmap libgda libgda-sqlite fragments #ffmpeg gnome-tweaks
 }
 
 function _ConfiguraGnome() {
@@ -51,7 +48,7 @@ function _ConfiguraGnome() {
   gsettings set org.gnome.desktop.sound allow-volume-above-100-percent 'true'
   gsettings set org.gnome.mutter center-new-windows 'true'
   gsettings set org.gnome.desktop.wm.preferences resize-with-right-button 'true'
-  gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
+  # gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
   gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
   gsettings set org.gnome.shell.app-switcher current-workspace-only 'true'
   gsettings set org.gtk.Settings.FileChooser sort-directories-first 'true'
@@ -62,7 +59,7 @@ function _ConfiguraGnome() {
   sudo -u gdm dbus-launch gsettings set org.gnome.desktop.sound allow-volume-above-100-percent 'true'
   sudo -u gdm dbus-launch gsettings set org.gnome.mutter center-new-windows 'true'
   sudo -u gdm dbus-launch gsettings set org.gnome.desktop.wm.preferences resize-with-right-button 'true'
-  sudo -u gdm dbus-launch gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
+  # sudo -u gdm dbus-launch gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
   sudo -u gdm dbus-launch gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
   sudo -u gdm dbus-launch gsettings set org.gnome.shell.app-switcher current-workspace-only 'true'
   sudo -u gdm dbus-launch gsettings set org.gtk.Settings.FileChooser sort-directories-first 'true'
@@ -90,19 +87,19 @@ function _ConfiguraGnome() {
   #https://www.bitday.me/download/
   mkdir -p ~/.local/share/backgrounds/8BitDay
   cd ~/.local/share/backgrounds/8BitDay
-  wget https://raw.githubusercontent.com/xaeioux/Useful-Shell/main/Install_PC/8BitDay.xml
-  wget https://github.com/xaeioux/Useful-Shell/raw/main/Install_PC/01-Early-Morning.png
-  wget https://github.com/xaeioux/Useful-Shell/raw/main/Install_PC/02-Mid-Morning.png
-  wget https://github.com/xaeioux/Useful-Shell/raw/main/Install_PC/03-Late-Morning.png
-  wget https://github.com/xaeioux/Useful-Shell/raw/main/Install_PC/04-Early-Afternoon.png
-  wget https://github.com/xaeioux/Useful-Shell/raw/main/Install_PC/05-Mid-Afternoon.png
-  wget https://github.com/xaeioux/Useful-Shell/raw/main/Install_PC/06-Late-Afternoon.png
-  wget https://github.com/xaeioux/Useful-Shell/raw/main/Install_PC/07-Early-Evening.png
-  wget https://github.com/xaeioux/Useful-Shell/raw/main/Install_PC/08-Mid-Evening.png
-  wget https://github.com/xaeioux/Useful-Shell/raw/main/Install_PC/09-Late-Evening.png
-  wget https://github.com/xaeioux/Useful-Shell/raw/main/Install_PC/10-Early-Night.png
-  wget https://github.com/xaeioux/Useful-Shell/raw/main/Install_PC/11-Mid-Night.png
-  wget https://github.com/xaeioux/Useful-Shell/raw/main/Install_PC/12-Late-Night.png
+  wget https://raw.githubusercontent.com/xaeioux/MeuFedora/main/Fundo/8BitDay.xml
+  wget https://github.com/xaeioux/MeuFedora/raw/main/Fundo/01-Inicio-Manha.png
+  wget https://github.com/xaeioux/MeuFedora/raw/main/Fundo/02-Meio-Manha.png
+  wget https://github.com/xaeioux/MeuFedora/raw/main/Fundo/03-Fim-Manha.png
+  wget https://github.com/xaeioux/MeuFedora/raw/main/Fundo/04-Inicio-Tarde.png
+  wget https://github.com/xaeioux/MeuFedora/raw/main/Fundo/05-Meio-Tarde.png
+  wget https://github.com/xaeioux/MeuFedora/raw/main/Fundo/06-Fim-Tarde.png
+  wget https://github.com/xaeioux/MeuFedora/raw/main/Fundo/07-Inicio-Crepusculo.png
+  wget https://github.com/xaeioux/MeuFedora/raw/main/Fundo/08-Meio-Crepusculo.png
+  wget https://github.com/xaeioux/MeuFedora/raw/main/Fundo/09-Fim-Crepusculo.png
+  wget https://github.com/xaeioux/MeuFedora/raw/main/Fundo/10-Cedo-Noite.png
+  wget https://github.com/xaeioux/MeuFedora/raw/main/Fundo/11-Meio-Noite.png
+  wget https://github.com/xaeioux/MeuFedora/raw/main/Fundo/12-Fim-Noite.png
   sed -i "s/MUDAR/\/home\/$USER/g" /home/$USER/.local/share/backgrounds/8BitDay/8BitDay.xml
 
   echo '<?xml version="1.0"?>' | sudo tee -a /usr/share/gnome-background-properties/8BitDay.xml
@@ -211,7 +208,6 @@ function _InstalaKitty() {
     echo ""
     echo 'linux_display_server x11'
   } >/home/$USER/.config/kitty/kitty.conf
- 
   wget https://raw.githubusercontent.com/xaeioux/MeuFedora/main/Confs/bpytop.conf
   mkdir /home/$USER/.config/bpytop/
   mv bpytop.conf /home/$USER/.config/bpytop/
@@ -349,9 +345,7 @@ function _ConfiguraZsh() {
 }
 
 function _InstalaSkype() {
-  sudo curl -o /etc/yum.repos.d/skype-stable.repo https://repo.skype.com/rpm/stable/
-  sudo dnf install -y skypeforlinux
-#  rm ~/.config/autostart/skypeforlinux.desktop 
+sudo dnf install -y https://repo.skype.com/latest/skypeforlinux-64.rpm 
 }
 
 function _InstalaChromium() {
@@ -362,7 +356,6 @@ function _InstalaFlatpak() {
   sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
   sudo flatpak remote-modify --enable flathub
   flatpak install -y com.discordapp.Discord
-  flatpak install -y de.haeckerfelix.Fragments 
 }
 
 function _InstalaVSCodium() {
@@ -448,8 +441,8 @@ function _ConfereSistema() {
 
   _ConferePacotes() {
     i=0
-    PACOTES=(jq neovim mtr neofetch most zsh NetworkManager-l2tp-gnome lsd bat gnome-extensions-app gnome-tweaks bpytop gnome-music vlc telegram-desktop virt-manager nmap rpmfusion-free-release-$(rpm -E %fedora) megasync nautilus-megasync kitty skypeforlinux chromium codium steam)
-    while [ "$i" -ne 25 ]
+    PACOTES=(jq neovim mtr neofetch most zsh NetworkManager-l2tp-gnome lsd bat gnome-extensions-app bpytop gnome-music vlc telegram-desktop virt-manager nmap rpmfusion-free-release-$(rpm -E %fedora) megasync nautilus-megasync kitty skypeforlinux chromium codium steam)
+    while [ "$i" -ne 24 ]
     do
       INVESTIGADOR=`dnf list installed ${PACOTES[$i]} 2>/dev/null | grep -v inst | wc -l`
 
@@ -505,9 +498,9 @@ function _ConfereSistema() {
 
   _ConfereFlatpak() {
     i=0
-    FLATPAK=(com.discordapp.Discord de.haeckerfelix.Fragments)
+    FLATPAK=(com.discordapp.Discord)
 
-    while [ "$i" -ne 2 ]
+    while [ "$i" -ne 1 ]
     do
       INVESTIGADOR=`flatpak list | grep ${FLATPAK[$i]} | wc -l`
 
@@ -673,8 +666,8 @@ function _ConfereSistema() {
 
   function _LimpaSistema() {
     sudo dnf -y remove gnome-shell-extension-background-logo util-linux-user rhythmbox gnome-shell-extension-gamemode
-    rm -rf /home/$USER/distro-grub-themes
-    rm -rf /home/$USER/Downloads/*
+    sudo rm -rf /home/$USER/distro-grub-themes
+    sudo rm -rf /home/$USER/Downloads/*
     sudo dnf -y autoremove
   }
 
@@ -792,31 +785,28 @@ function _ConfereSistema() {
   echo -e $VERMELHOG '    (>\¥/)占~~~~~~~~~~~~~~~~~~~~~'$SEMCOR
   _Barra
   _LimpaSistema
-  
-  #pactl load-module module-switch-on-connect
-  
-  touch wooting.rules
+
+  touch 70-wooting.rules
   {
     echo '# Wooting One Legacy'
-    echo 'SUBSYSTEM=="hidraw", ATTRS{idVendor}=="03eb", ATTRS{idProduct}=="ff01", MODE:="0660", GROUP="input"'
-    echo 'SUBSYSTEM=="usb", ATTRS{idVendor}=="03eb", ATTRS{idProduct}=="ff01", MODE:="0660", GROUP="input"'
+    echo 'SUBSYSTEM=="hidraw", ATTRS{idVendor}=="03eb", ATTRS{idProduct}=="ff01", TAG+="uaccess"'
+    echo 'SUBSYSTEM=="usb", ATTRS{idVendor}=="03eb", ATTRS{idProduct}=="ff01", TAG+="uaccess"'
     echo ""
     echo '# Wooting One update mode'
-    echo 'SUBSYSTEM=="hidraw", ATTRS{idVendor}=="03eb", ATTRS{idProduct}=="2402", MODE:="0660", GROUP="input"'
+    echo 'SUBSYSTEM=="hidraw", ATTRS{idVendor}=="03eb", ATTRS{idProduct}=="2402", TAG+="uaccess"'
     echo ""
-    echo '# Wooting One'
-    echo 'SUBSYSTEM=="hidraw", ATTRS{idVendor}=="31e3", ATTRS{idProduct}=="1100", MODE:="0660", GROUP="input"'
-    echo 'SUBSYSTEM=="usb", ATTRS{idVendor}=="31e3", ATTRS{idProduct}=="1100", MODE:="0660", GROUP="input"'
+    echo '# Wooting Two Legacy'
+    echo 'SUBSYSTEM=="hidraw", ATTRS{idVendor}=="03eb", ATTRS{idProduct}=="ff02", TAG+="uaccess"'
+    echo 'SUBSYSTEM=="usb", ATTRS{idVendor}=="03eb", ATTRS{idProduct}=="ff02", TAG+="uaccess"'
     echo ""
-    echo '# Wooting One Alt-gamepad mode'
-    echo 'SUBSYSTEM=="hidraw", ATTRS{idVendor}=="31e3", ATTRS{idProduct}=="1101", MODE:="0660", GROUP="input"'
-    echo 'SUBSYSTEM=="usb", ATTRS{idVendor}=="31e3", ATTRS{idProduct}=="1101", MODE:="0660", GROUP="input"'
-    echo ""
-    echo '# Wooting One 2nd Alt-gamepad mode'
+    echo '# Wooting Two update mode'
     echo 'SUBSYSTEM=="hidraw", ATTRS{idVendor}=="31e3", ATTRS{idProduct}=="1102", MODE:="0660", GROUP="input"'
-    echo 'SUBSYSTEM=="usb", ATTRS{idVendor}=="31e3", ATTRS{idProduct}=="1102", MODE:="0660", GROUP="input"'
+    echo ""
+    echo '# Generic Wootings'
+    echo 'SUBSYSTEM=="hidraw", ATTRS{idVendor}=="31e3", TAG+="uaccess"'
+    echo 'SUBSYSTEM=="usb", ATTRS{idVendor}=="31e3", TAG+="uaccess"'
   } > wooting.rules
-  sudo mv wooting.rules /etc/udev/rules.d/
+  sudo mv 70-wooting.rules /etc/udev/rules.d/
   sudo udevadm control --reload-rules && sudo udevadm trigger
 
   _Barra
