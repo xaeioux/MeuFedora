@@ -211,7 +211,8 @@ function _InstalaKitty() {
     echo ""
     echo 'linux_display_server x11'
   } >/home/$USER/.config/kitty/kitty.conf
-  wget https://raw.githubusercontent.com/xaeioux/Useful-Shell/main/Install_PC/bpytop.conf
+ 
+  wget https://raw.githubusercontent.com/xaeioux/MeuFedora/main/Confs/bpytop.conf
   mkdir /home/$USER/.config/bpytop/
   mv bpytop.conf /home/$USER/.config/bpytop/
 }
