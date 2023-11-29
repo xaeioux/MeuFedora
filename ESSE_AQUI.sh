@@ -126,11 +126,10 @@ function _ConfiguraGnome() {
 function _InstalaExtensions() {
   wget -N -q "https://raw.githubusercontent.com/ToasterUwU/install-gnome-extensions/master/install-gnome-extensions.sh" -O ./install-gnome-extensions.sh
   chmod +x install-gnome-extensions.sh
-  ./install-gnome-extensions.sh --enable 615 545 4691 517 4937 5278 1007
+  ./install-gnome-extensions.sh --enable 615 545 517 4937 5278 1007
   rm -f ./install-gnome-extensions.sh
   # V - 615  = AppIndicator and KStatusNotifierItem Support
   # X - 545  = Hide Top Bar
-  # V - 4691 = PiP on top
   # V - 517  = Caffeine
   # X - 4937 = Draw On Your Screen 2
   # V - 5278 = Pano - Clipboard Manager
@@ -464,8 +463,8 @@ function _ConfereSistema() {
 
   _ConfereExtensoes() {
     i=0
-    EXTENSOES=("pano@elhan.io" "appindicatorsupport@rgcjonas.gmail.com" "hidetopbar@mathieu.bidon.ca" "windowIsReady_Remover@nunofarruca@gmail.com" "pip-on-top@rafostar.github.com" "caffeine@patapon.info" "draw-on-your-screen2@zhrexl.github.com")
-    while [ "$i" -ne 7 ]
+    EXTENSOES=("pano@elhan.io" "appindicatorsupport@rgcjonas.gmail.com" "hidetopbar@mathieu.bidon.ca" "windowIsReady_Remover@nunofarruca@gmail.com" "caffeine@patapon.info" "draw-on-your-screen2@zhrexl.github.com")
+    while [ "$i" -ne 6 ]
     do
       INVESTIGADOR=`gnome-extensions list | grep ${EXTENSOES[$i]} | wc -l`
 
