@@ -97,7 +97,7 @@ function _ConfiguraGnome() {
   wget https://github.com/xaeioux/MeuFedora/raw/main/Fundo/07-Inicio-Crepusculo.png
   wget https://github.com/xaeioux/MeuFedora/raw/main/Fundo/08-Meio-Crepusculo.png
   wget https://github.com/xaeioux/MeuFedora/raw/main/Fundo/09-Fim-Crepusculo.png
-  wget https://github.com/xaeioux/MeuFedora/raw/main/Fundo/10-Cedo-Noite.png
+  wget https://github.com/xaeioux/MeuFedora/raw/main/Fundo/10-Inicio-Noite.png
   wget https://github.com/xaeioux/MeuFedora/raw/main/Fundo/11-Meio-Noite.png
   wget https://github.com/xaeioux/MeuFedora/raw/main/Fundo/12-Fim-Noite.png
   sed -i "s/MUDAR/\/home\/$USER/g" /home/$USER/.local/share/backgrounds/8BitDay/8BitDay.xml
