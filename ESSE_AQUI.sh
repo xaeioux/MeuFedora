@@ -12,8 +12,8 @@ function _Barra() {
 echo $BARRA
 }
 
-wget -q --spider http://pudim.com.br
-if [ $? -eq 0 ]; then
+#wget -q --spider http://pudim.com.br
+#if [ $? -eq 0 ]; then
   _Barra
   echo -e $VERMELHOG '    (\_/)'
   echo -e $VERMELHOG '   =( °▽°)=  Iniciando a instalação'
@@ -818,10 +818,10 @@ function _ConfereSistema() {
   gsettings set org.gnome.shell app-picker-layout "[{'kitty.desktop': <{'position': <0>}>, 'firefox.desktop': <{'position': <1>}>, 'chromium-browser.desktop': <{'position': <2>}>, 'codium.desktop': <{'position': <3>}>, 'skypeforlinux.desktop': <{'position': <4>}>, 'org.telegram.desktop.desktop': <{'position': <5>}>, 'com.discordapp.Discord.desktop': <{'position': <6>}>, 'org.gnome.Nautilus.desktop': <{'position': <7>}>, 'org.gnome.Boxes.desktop': <{'position': <8>}>, 'org.gnome.TextEditor.desktop': <{'position': <9>}>, 'org.gnome.Calculator.desktop': <{'position': <10>}>, 'steam.desktop': <{'position': <11>}>, 'org.gnome.Extensions.desktop': <{'position': <12>}>, 'org.gnome.Settings.desktop': <{'position': <13>}>}, {'org.gnome.Weather.desktop': <{'position': <0>}>, 'org.gnome.Maps.desktop': <{'position': <1>}>, 'org.gnome.Calendar.desktop': <{'position': <2>}>, 'org.gnome.clocks.desktop': <{'position': <3>}>, 'org.gnome.Contacts.desktop': <{'position': <4>}>, 'org.gnome.Photos.desktop': <{'position': <5>}>, 'org.gnome.Music.desktop': <{'position': <6>}>, 'org.gnome.Totem.desktop': <{'position': <7>}>, 'vlc.desktop': <{'position': <8>}>, 'libreoffice-calc.desktop': <{'position': <9>}>, 'libreoffice-impress.desktop': <{'position': <10>}>, 'libreoffice-writer.desktop': <{'position': <11>}>, 'org.gnome.Evince.desktop': <{'position': <12>}>, 'org.gnome.Software.desktop': <{'position': <13>}>, 'megasync.desktop': <{'position': <14>}>, 'de.haeckerfelix.Fragments.desktop': <{'position': <15>}>, 'virt-manager.desktop': <{'position': <16>}>, 'yelp.desktop': <{'position': <17>}>, 'org.gnome.Tour.desktop': <{'position': <18>}>, 'Utilities': <{'position': <19>}>}]"
   sudo /bin/rm /etc/sudoers.d/$USER
   sudo -k
-else
-  _Barra
-  echo -e $VERMELHOG '    (\_/)    Ops!'
-  echo -e $VERMELHOG '   =( ⇀‸↼)=  Você está sem internet'
-  echo -e $VERMELHOG '   ୧( \¥/ )୨  Para continuar é necessário ter internet'$SEMCOR
-  _Barra
-fi
+#else
+#  _Barra
+#  echo -e $VERMELHOG '    (\_/)    Ops!'
+#  echo -e $VERMELHOG '   =( ⇀‸↼)=  Você está sem internet'
+#  echo -e $VERMELHOG '   ୧( \¥/ )୨  Para continuar é necessário ter internet'$SEMCOR
+#  _Barra
+#fi
