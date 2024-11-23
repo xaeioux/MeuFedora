@@ -343,9 +343,9 @@ function _ConfiguraZsh() {
   sudo chsh $USER -s $(which zsh)
 }
 
-function _InstalaSkype() {
-sudo dnf install -y https://repo.skype.com/latest/skypeforlinux-64.rpm 
-}
+#function _InstalaSkype() {
+#sudo dnf install -y https://repo.skype.com/latest/skypeforlinux-64.rpm 
+#}
 
 function _InstalaChromium() {
   sudo dnf install -y chromium
@@ -440,7 +440,7 @@ function _ConfereSistema() {
 
   _ConferePacotes() {
     i=0
-    PACOTES=(jq neovim mtr neofetch most zsh NetworkManager-l2tp-gnome lsd bat gnome-extensions-app bpytop gnome-music vlc telegram-desktop virt-manager nmap rpmfusion-free-release-$(rpm -E %fedora) megasync nautilus-megasync kitty skypeforlinux chromium codium steam)
+    PACOTES=(jq neovim mtr neofetch most zsh NetworkManager-l2tp-gnome lsd bat gnome-extensions-app bpytop gnome-music vlc telegram-desktop virt-manager nmap rpmfusion-free-release-$(rpm -E %fedora) megasync nautilus-megasync kitty chromium codium steam)
     while [ "$i" -ne 24 ]
     do
       INVESTIGADOR=`dnf list installed ${PACOTES[$i]} 2>/dev/null | grep -v inst | wc -l`
@@ -719,12 +719,12 @@ function _ConfereSistema() {
   _ConfiguraZsh
 
   echo "";
-  _Barra
-  echo -e $VERMELHOG '    (\_/)'
-  echo -e $VERMELHOG '   =(〣°ロ°)=  Instalando o SKYPE'
-  echo -e $VERMELHOG '    ( >\¥/<)'$SEMCOR
-  _Barra
-  _InstalaSkype
+#  _Barra
+#  echo -e $VERMELHOG '    (\_/)'
+#  echo -e $VERMELHOG '   =(〣°ロ°)=  Instalando o SKYPE'
+#  echo -e $VERMELHOG '    ( >\¥/<)'$SEMCOR
+#  _Barra
+#  _InstalaSkype
 
   echo "";
   _Barra
