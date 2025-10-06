@@ -69,7 +69,7 @@ function _ConfiguraGnome() {
   gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/kitty/ command 'kitty'
   gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/kitty/ binding '<Control><Alt>T'
 
-  gsettings set org.gnome.desktop.search-providers disabled "['org.gnome.Contacts.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Boxes.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Characters.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Software.desktop', 'org.gnome.Photos.desktop', 'firefox.desktop']"
+  gsettings set org.gnome.desktop.search-providers disabled "['org.gnome.Contacts.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Boxes.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Characters.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Software.desktop', 'org.gnome.Photos.desktop', 'firefox.desktop', 'org.mozilla.firefox.desktop']"
   gsettings set org.gnome.shell favorite-apps "[]"
   gsettings set org.gnome.shell disabled-extensions "[]"
   gsettings set org.gnome.shell enabled-extensions "['hidetopbar@mathieu.bidon.ca', 'windowIsReady_Remover@nunofarruca@gmail.com', 'appindicatorsupport@rgcjonas.gmail.com', 'firefox-pip@bennypowers.com', 'caffeine@patapon.info', 'draw-on-your-screen2@zhrexl.github.com', 'pip-on-top@rafostar.github.com', 'pano@elhan.io']"
