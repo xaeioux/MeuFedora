@@ -38,7 +38,7 @@ function _ConfiguraRepositorios() {
 }
 
 function _InstalaDependencias() {
-  sudo dnf install -y jq neovim mtr neofetch most zsh NetworkManager-l2tp-gnome lsd bat gnome-extensions-app bpytop util-linux-user gnome-music vlc telegram-desktop virt-manager nmap libgda libgda-sqlite fragments #ffmpeg gnome-tweaks
+  sudo dnf install -y neovim most zsh lsd bat gnome-extensions-app bpytop vlc telegram-desktop  nmap libgda libgda-sqlite fragments
 }
 
 function _ConfiguraGnome() {
@@ -440,8 +440,8 @@ function _ConfereSistema() {
 
   _ConferePacotes() {
     i=0
-    PACOTES=(jq neovim mtr neofetch most zsh NetworkManager-l2tp-gnome lsd bat gnome-extensions-app bpytop gnome-music vlc telegram-desktop virt-manager nmap rpmfusion-free-release-$(rpm -E %fedora) megasync nautilus-megasync kitty chromium codium steam)
-    while [ "$i" -ne 24 ]
+    PACOTES=(neovim most zsh lsd bat gnome-extensions-app bpytop vlc telegram-desktop  nmap libgda libgda-sqlite fragments)
+    while [ "$i" -ne 14 ]
     do
       INVESTIGADOR=`dnf list installed ${PACOTES[$i]} 2>/dev/null | grep -v inst | wc -l`
 
@@ -718,13 +718,6 @@ function _ConfereSistema() {
   _Barra
   _ConfiguraZsh
 
-  echo "";
-#  _Barra
-#  echo -e $VERMELHOG '    (\_/)'
-#  echo -e $VERMELHOG '   =(〣°ロ°)=  Instalando o SKYPE'
-#  echo -e $VERMELHOG '    ( >\¥/<)'$SEMCOR
-#  _Barra
-#  _InstalaSkype
 
   echo "";
   _Barra
