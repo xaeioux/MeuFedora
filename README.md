@@ -1,4 +1,4 @@
-# Fedora 39
+# Fedora 42
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    (\_/)   +---------+ Cansei de pular de distro em distro e criei esse
@@ -7,7 +7,7 @@
   ********             
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-> (Último teste: 20/11/2023) ★ 
+> (Último teste: 06/10/2025) ★ 
   
 Feito com muita atenção, pensando na praticidade e software livre.
 Pode ser usado por qualquer pessoa, basta executar o script e já terá um sistema otimizado
@@ -29,13 +29,13 @@ Recursos:
    * Centraliza novas janelas.
    * Tema Escuro.
    * Atalho para o terminal ( Ctrl + Alt + T ).
-   * Desabilitado fontes de pesquisa no Gnom e.
+   * Desabilitado fontes de pesquisa no Gnome.
    * Removidos aplicativos favoritos.
 * Wallpaper dinâmico
    * [8 Bit Day](https://bitday.me/download/).
-* Gerenciador de área de transferência.
-   * [Pano](https://github.com/oae/gnome-shell-pano). 
-* Desenhe na tela ( Super + Alt + D ) ***Não está funcionando no gnome 45***
+* Gerenciador de área de transferência. ***Não está funcionando no gnome***
+   * [Pano](https://github.com/oae/gnome-shell-pano).  
+* Desenhe na tela ( Super + Alt + D ) ***Não está funcionando no gnome***
    * [Draw on Your Screen 2](https://github.com/zhrexl/DrawOnYourScreen2).
 * Sincronização de arquivos com Nuvem
    * [MegaSync](https://github.com/meganz/MEGAsync). 
@@ -53,8 +53,6 @@ Recursos:
    * [LSDeluxe](https://github.com/lsd-rs/lsd).
 * Editor de texto
    * [NeoVim](https://github.com/neovim/neovim).
-* IDE
-   * [VSCodium](https://github.com/VSCodium/vscodium).
 * Tema do Grub
    * [Distro Grub Themes](https://github.com/AdisonCavani/distro-grub-themes). 
 * Skype
