@@ -660,7 +660,7 @@ function _ConfereSistema() {
   }
 
   function _LimpaSistema() {
-    sudo dnf -y remove gnome-shell-extension-background-logo util-linux-user rhythmbox gnome-shell-extension-gamemode evince gnome-video simple-scan
+    sudo dnf -y remove gnome-shell-extension-background-logo util-linux-user rhythmbox gnome-shell-extension-gamemode evince totem simple-scan
     sudo rm -rf /home/$USER/distro-grub-themes
     sudo rm -rf /home/$USER/Downloads/*
     sudo dnf -y autoremove
