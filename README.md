@@ -1,9 +1,9 @@
 # Fedora 42
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   (\_/)   +---------+ Cansei de pular de distro em distro e criei esse
-  =('°-°)= |   Quê?  | script de pós instalação para o fedora. Use para  
-   (> ¥ )☭ +---------+ facilitar o dia a dia. Testado e validado arduamente!
+   (\_/)   +------+ Cansei de pular de distro em distro e criei esse
+  =('°-°)= | Quê? | script de pós instalação para o fedora. Use para  
+   (> ¥ )☭ +------+ facilitar o dia a dia. Testado e validado arduamente!
   ********             
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
