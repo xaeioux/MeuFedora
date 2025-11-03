@@ -38,7 +38,7 @@ function _ConfiguraRepositorios() {
 }
 
 function _InstalaDependencias() {
-  sudo dnf install -y neovim most zsh lsd bat gnome-extensions-app bpytop vlc telegram-desktop  nmap libgda libgda-sqlite fragments
+  sudo dnf install -y neovim most zsh lsd bat gnome-extensions-app btop nmap libgda libgda-sqlite
 }
 
 function _ConfiguraGnome() {
@@ -73,8 +73,8 @@ function _ConfiguraGnome() {
   gsettings set org.gnome.shell favorite-apps "[]"
   gsettings set org.gnome.shell disabled-extensions "[]"
   gsettings set org.gnome.shell enabled-extensions "['hidetopbar@mathieu.bidon.ca', 'windowIsReady_Remover@nunofarruca@gmail.com', 'appindicatorsupport@rgcjonas.gmail.com', 'firefox-pip@bennypowers.com', 'caffeine@patapon.info', 'draw-on-your-screen2@zhrexl.github.com', 'pip-on-top@rafostar.github.com', 'pano@elhan.io']"
-  #gsettings set org.gnome.shell.extensions.hidetopbar mouse-sensitive 'true'
-  #gsettings set org.gnome.shell.extensions.hidetopbar mouse-sensitive-fullscreen-window 'false'
+  gsettings set org.gnome.shell.extensions.hidetopbar mouse-sensitive 'true'
+  gsettings set org.gnome.shell.extensions.hidetopbar mouse-sensitive-fullscreen-window 'false'
   #gsettings set org.gnome.shell.extensions.hidetopbar pressure-threshold 75
   gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Utilities/ apps "['gnome-system-monitor.desktop', 'nvim.desktop', 'org.fedoraproject.MediaWriter.desktop', 'org.gnome.Cheese.desktop', 'org.gnome.Connections.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.eog.desktop', 'org.gnome.Terminal.desktop', 'simple-scan.desktop']"
   gsettings set org.gnome.shell app-picker-layout "[{'org.mozilla.firefox.desktop': <{'position': <0>}>, 'kitty.desktop': <{'position': <1>}>, 'chromium-browser.desktop': <{'position': <2>}>, 'org.telegram.desktop.desktop': <{'position': <3>}>, 'com.discordapp.Discord.desktop': <{'position': <4>}>, 'org.gnome.Nautilus.desktop': <{'position': <5>}>, 'org.gnome.Boxes.desktop': <{'position': <6>}>, 'org.gnome.TextEditor.desktop': <{'position': <7>}>, 'org.gnome.Calculator.desktop': <{'position': <8>}>, 'com.stremio.Stremio.desktop': <{'position': <9>}>, 'steam.desktop': <{'position': <10>}>, 'org.gnome.Extensions.desktop': <{'position': <11>}>, 'org.gnome.Settings.desktop': <{'position': <12>}>}, {'org.gnome.Loupe.desktop': <{'position': <0>}>, 'org.gnome.Weather.desktop': <{'position': <1>}>, 'org.gnome.Maps.desktop': <{'position': <2>}>, 'org.gnome.Calendar.desktop': <{'position': <3>}>, 'org.gnome.clocks.desktop': <{'position': <4>}>, 'org.gnome.Contacts.desktop': <{'position': <5>}>, 'org.gnome.Snapshot.desktop': <{'position': <6>}>, 'org.gnome.Totem.desktop': <{'position': <7>}>, 'vlc.desktop': <{'position': <8>}>, 'libreoffice-writer.desktop': <{'position': <9>}>, 'libreoffice-impress.desktop': <{'position': <10>}>, 'libreoffice-calc.desktop': <{'position': <11>}>, 'org.gnome.Software.desktop': <{'position': <12>}>, 'org.gnome.Characters.desktop': <{'position': <13>}>, 'org.gnome.Evince.desktop': <{'position': <14>}>, 'megasync.desktop': <{'position': <15>}>, 'org.gnome.Ptyxis.desktop': <{'position': <16>}>, 'de.haeckerfelix.Fragments.desktop': <{'position': <17>}>, 'yelp.desktop': <{'position': <18>}>, 'org.gnome.Tour.desktop': <{'position': <19>}>, 'org.gnome.font-viewer.desktop': <{'position': <20>}>, 'Utilities': <{'position': <21>}>, 'System': <{'position': <22>}>}]"
@@ -126,7 +126,7 @@ function _ConfiguraGnome() {
 function _InstalaExtensions() {
   wget -N -q "https://raw.githubusercontent.com/ToasterUwU/install-gnome-extensions/master/install-gnome-extensions.sh" -O ./install-gnome-extensions.sh
   chmod +x install-gnome-extensions.sh
-  ./install-gnome-extensions.sh --enable 615 545 517 1007
+  ./install-gnome-extensions.sh --enable 615 545 517 4937 5278 1007
   rm -f ./install-gnome-extensions.sh
   # V - 615  = AppIndicator and KStatusNotifierItem Support
   # X - 545  = Hide Top Bar
@@ -134,6 +134,13 @@ function _InstalaExtensions() {
   # X - 4937 = Draw On Your Screen 2
   # V - 5278 = Pano - Clipboard Manager
   # V - 1007 = Window Is Ready - Notification remover
+  git clone https://github.com/oae/gnome-shell-pano.git
+  cd ./gnome-shell-pano
+
+  yarn install
+  yarn build
+
+  mv "$PWD/dist" "$HOME/.local/share/gnome-shell/extensions/pano@elhan.io"
 }
 
 function _InstalaMegasync() {
@@ -207,9 +214,9 @@ function _InstalaKitty() {
     echo ""
     echo 'linux_display_server x11'
   } >/home/$USER/.config/kitty/kitty.conf
-  wget https://raw.githubusercontent.com/xaeioux/MeuFedora/main/Confs/bpytop.conf
-  mkdir /home/$USER/.config/bpytop/
-  mv bpytop.conf /home/$USER/.config/bpytop/
+  wget https://raw.githubusercontent.com/xaeioux/MeuFedora/main/Confs/btop.conf
+  mkdir /home/$USER/.config/btop/
+  mv btop.conf /home/$USER/.config/btop/
 }
 
 function _ConfiguraZsh() {
@@ -259,7 +266,7 @@ function _ConfiguraZsh() {
     echo 'alias more="bat"'
     echo 'alias less="bat"'
     echo 'alias diff="diff --color=auto"'
-    echo 'alias top="bpytop"'
+    echo 'alias top="btop"'
     echo 'alias hss="ssh -i ~/Documentos/vaps.key"'
     echo 'alias vim="nvim"'
     echo ""
@@ -343,9 +350,6 @@ function _ConfiguraZsh() {
   sudo chsh $USER -s $(which zsh)
 }
 
-#function _InstalaSkype() {
-#sudo dnf install -y https://repo.skype.com/latest/skypeforlinux-64.rpm 
-#}
 
 function _InstalaChromium() {
   sudo dnf install -y chromium
@@ -431,8 +435,8 @@ function _ConfereSistema() {
 
   _ConferePacotes() {
     i=0
-    PACOTES=(neovim most zsh lsd bat gnome-extensions-app bpytop vlc telegram-desktop  nmap libgda libgda-sqlite fragments)
-    while [ "$i" -ne 14 ]
+    PACOTES=(neovim most zsh lsd bat gnome-extensions-app btop nmap libgda libgda-sqlite)
+    while [ "$i" -ne 12 ]
     do
       INVESTIGADOR=`dnf list installed ${PACOTES[$i]} 2>/dev/null | grep -v inst | wc -l`
 
@@ -616,7 +620,7 @@ function _ConfereSistema() {
 
     function _ConfereArquivos() {
       i=0
-      ARQUIVOS=('/usr/share/gnome-background-properties/8BitDay.xml' "/home/$USER/.local/share/backgrounds/8BitDay/8BitDay.xml" "/home/$USER/.config/kitty/kitty.conf" "/home/$USER/.config/bpytop/bpytop.conf" "/home/$USER/.zshrc" "/home/$USER/.mkpass.sh")
+      ARQUIVOS=('/usr/share/gnome-background-properties/8BitDay.xml' "/home/$USER/.local/share/backgrounds/8BitDay/8BitDay.xml" "/home/$USER/.config/kitty/kitty.conf" "/home/$USER/.config/btop/btop.conf" "/home/$USER/.zshrc" "/home/$USER/.mkpass.sh")
       DIRETORIOS=("/home/$USER/.local/share/backgrounds/8BitDay" "/home/$USER/.config/kitty/" "/home/$USER/.config/.zsh/powerlevel10k" "/home/$USER/.config/.zsh/zsh-autosuggestions" "/home/$USER/.config/.zsh/zsh-syntax-highlighting" "/home/$USER/.config/.zsh/zsh-history-substring-search")
       while [ "$i" -ne 6 ]
       do
