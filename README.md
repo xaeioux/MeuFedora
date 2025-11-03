@@ -33,10 +33,8 @@ Recursos:
    * Removidos aplicativos favoritos.
 * Wallpaper dinâmico
    * [8 Bit Day](https://bitday.me/download/).
-* Gerenciador de área de transferência. ***Não está funcionando no gnome***
+* Gerenciador de área de transferência. 
    * [Pano](https://github.com/oae/gnome-shell-pano).  
-* Desenhe na tela ( Super + Alt + D ) ***Não está funcionando no gnome***
-   * [Draw on Your Screen 2](https://github.com/zhrexl/DrawOnYourScreen2).
 * Sincronização de arquivos com Nuvem
    * [MegaSync](https://github.com/meganz/MEGAsync). 
 * Terminal
