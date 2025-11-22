@@ -1,19 +1,42 @@
-# Fedora 42
+# Fedora 43
+
+
+
+██████╗ ██╗ ██████╗                                        
+██╔══██╗██║██╔════╝                                        
+██████╔╝██║██║  ███╗                                       
+██╔══██╗██║██║   ██║                                       
+██████╔╝██║╚██████╔╝                                       
+╚═════╝ ╚═╝ ╚═════╝                                        
+                                                           
+ ██████╗██╗  ██╗ █████╗ ███╗   ██╗ ██████╗ ███████╗███████╗
+██╔════╝██║  ██║██╔══██╗████╗  ██║██╔════╝ ██╔════╝██╔════╝
+██║     ███████║███████║██╔██╗ ██║██║  ███╗█████╗  ███████╗
+██║     ██╔══██║██╔══██║██║╚██╗██║██║   ██║██╔══╝  ╚════██║
+╚██████╗██║  ██║██║  ██║██║ ╚████║╚██████╔╝███████╗███████║
+ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝╚══════╝
+                                                           
+ ██████╗ ██████╗ ███╗   ███╗██╗███╗   ██╗ ██████╗ ██╗      
+██╔════╝██╔═══██╗████╗ ████║██║████╗  ██║██╔════╝ ██║      
+██║     ██║   ██║██╔████╔██║██║██╔██╗ ██║██║  ███╗██║      
+██║     ██║   ██║██║╚██╔╝██║██║██║╚██╗██║██║   ██║╚═╝      
+╚██████╗╚██████╔╝██║ ╚═╝ ██║██║██║ ╚████║╚██████╔╝██╗      
+ ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝      
+
+>>> A COMPLETE CODE REFACTORING <<<
+>>> NEW SHINY THINGS <<<
+>>> NEW ASCII STUFF <<<
+>>> LOTS OF RABBITS <<<
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   (\_/)   +------+ Cansei de pular de distro em distro e criei esse
-  =('°-°)= | Quê? | script de pós instalação para o fedora. Use para  
-   (> ¥ )☭ +------+ facilitar o dia a dia. Testado e validado arduamente!
-  ********             
+   (\_/)      Tired of distro hopping, needing to install and configure
+  =('°-°)=    everything the hard way, always forgeting something, so   
+   (> ¥ )☭    I took my notes and it became THIS!!!
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-> (Último teste: 06/10/2025) ★ 
+
+> (Last test: 03/11/2025) ★ 
   
-Feito com muita atenção, pensando na praticidade e software livre.
-Pode ser usado por qualquer pessoa, basta executar o script e já terá um sistema otimizado
-com um fluxo pensado no GNOME, por isso a escolha do Fedora, que entrega uma experiência ímpar,
-tanto em desempenho quanto em estabilidade. 
-
 Como usar:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 wget -O - https://raw.githubusercontent.com/xaeioux/MeuFedora/main/ESSE_AQUI.sh | bash
