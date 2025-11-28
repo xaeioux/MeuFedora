@@ -39,22 +39,22 @@ wget -O - https://raw.githubusercontent.com/xaeioux/MeuFedora/main/ESSE_AQUI.sh 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Recursos:
-* Otimização no download de atualizações
-* Configurações no GNOME:
-   * Mostra a porcentagem da bateria.
-   * Clica com o mousepad.
-   * Rolagem natural desabilitada.
-   * Volume acima de 100%.
-   * Centraliza novas janelas.
-   * Tema Escuro.
-   * Atalho para o terminal ( Ctrl + Alt + T ).
-   * Desabilitado fontes de pesquisa no Gnome.
-   * Removidos aplicativos favoritos.
-* Wallpaper dinâmico
+* RPM fusion FREE
+* GNOME confs:
+   * Show battery percentage - TRUE
+   * Tap-on-click - TRUE
+   * Natural scroll - FALSE
+   * Allow volume above 100 percent - TRUE
+   * Center new windows - TRUE
+   * Dark theme.
+   * Kitty shortcut ( Ctrl + Alt + T ).
+   * Disable all search providers ( except for settings )
+   * No fav apps
+* Dynamic wallpaper
    * [8 Bit Day](https://bitday.me/download/).
-* Gerenciador de área de transferência. 
+* Clipboard manager. 
    * [Pano](https://github.com/oae/gnome-shell-pano).  
-* Sincronização de arquivos com Nuvem
+* MegaSync.
    * [MegaSync](https://github.com/meganz/MEGAsync). 
 * Terminal
    * [Kitty](https://github.com/kovidgoyal/kitty).
@@ -64,16 +64,16 @@ Recursos:
    * [Fish-like Autosuggestion](https://github.com/zsh-users/zsh-autosuggestions).
    * [Zsh Syntax Highlight](https://github.com/zsh-users/zsh-syntax-highlighting).
    * [Zsh History Substring Search](https://github.com/zsh-users/zsh-history-substring-search).
-* Top da próxima geração.
-   * [BpyTop](https://github.com/aristocratos/bpytop). 
-* Ícones e cores em arquivos e diretórios.
+   * [Zsh Autopair]( https://github.com/hlissner/zsh-autopair)
+* Next gen Top.
+   * [BTop](https://github.com/aristocratos/btop). 
+* Next gen ls.
    * [LSDeluxe](https://github.com/lsd-rs/lsd).
-* Editor de texto
+* Text editor.
    * [NeoVim](https://github.com/neovim/neovim).
-* Tema do Grub
+* Grub Theme.
    * [Distro Grub Themes](https://github.com/AdisonCavani/distro-grub-themes). 
-* Skype
-* Steam
-* Melhorias no histórico do Zsh
-* Gerador de senha aleatória ( mkpass )
-* Checagem automática da instalação ( O script verifica se tudo rodou corretamente )⠀
+* Steam.
+* Custom ZSH.
+* Random-pass generator ( mkpass ).
+* Script success check.
